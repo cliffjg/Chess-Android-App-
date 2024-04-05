@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="183dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+
+
+            app:srcCompat="@drawable/chessgameimage" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="153dp"
+            android:layout_height="27dp"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="137dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Chess77"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:text="SAVED GAMES" />
+
+    <ListView
+        android:id="@+id/SAVED_GAMES"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/scrollForMore"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:text="SCROLL FOR MORE"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:onClick="runNewGame"
+            android:text="NEW GAME" />
+
+        <Button
+            android:id="@+id/sortList"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:onClick="sortList"
+            android:text="@android:string/search_go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/earliestDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="earliestDate"
+            android:text="earliestDate"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/latestDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="latestDate"
+            android:text="latestDate"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/AtoZ"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:onClick="AtoZ"
+            android:text="A-Z"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/ZtoA"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:onClick="ZtoA"
+            android:text="Z-A"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/drawButton"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="drawButton"
+                    android:text="@string/drawButton" />
+
+                <Button
+                    android:id="@+id/resignButton"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="resign"
+                    android:text="@string/resignButton" />
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="save"
+                    android:text="@string/saveButton" />
+        </LinearLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/boardView"
+            android:layout_width="362dp"
+            android:layout_height="362dp"
+            android:layout_marginStart="10dp"
+            app:columnCount="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="8">
+
+                <!-- y = 7-->
+                <TextView
+                    android:id="@+id/square07"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square17"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square27"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square37"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square47"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square57"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square67"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square77"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 6-->
+
+
+                <TextView
+                    android:id="@+id/square06"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square16"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square26"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square36"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square46"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square56"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square66"
+                    android:layout_width="46dp"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square76"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 5 -->
+                <TextView
+                    android:id="@+id/square05"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square15"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square25"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square35"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square45"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square55"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square65"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square75"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 4 -->
+                <TextView
+                    android:id="@+id/square04"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square14"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square24"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square34"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square44"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square54"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square64"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square74"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 3 -->
+                <TextView
+                    android:id="@+id/square03"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square13"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square23"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square33"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square43"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square53"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square63"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square73"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 2 -->
+                <TextView
+                    android:id="@+id/square02"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square12"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square22"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square32"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square42"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square52"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square62"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square72"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 1 -->
+                <TextView
+                    android:id="@+id/square01"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square11"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square21"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square31"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square41"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square51"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square61"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square71"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <!-- y = 0 -->
+                <TextView
+                    android:id="@+id/square00"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square10"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square20"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square30"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square40"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square50"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square60"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/darkSquare"
+                    android:onClick="movePiece" />
+
+                <TextView
+                    android:id="@+id/square70"
+                    android:layout_width="@dimen/squareWidth"
+                    android:layout_height="@dimen/squareHeight"
+                    android:background="@color/lightSquare"
+                    android:onClick="movePiece" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/playerTurn"
+                    android:layout_width="107dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/playerTurn"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/illegalMove"
+                    android:layout_width="181dp"
+                    android:layout_height="22dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Illegal move, try again"
+                    android:textAlignment="center"
+                    android:textColor="@color/illegalMove"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/checkCheckMateTextView"
+                    android:layout_width="86dp"
+                    android:layout_height="22dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/illegalMove"
+
+                   />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectedPieceLabel"
+                    android:layout_width="115dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Selected Piece:"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/selectedPieceTextView"
+                    android:layout_width="178dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="60dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="No Piece Selected" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+                <Button
+                    android:id="@+id/undoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:onClick="undo"
+                    android:text="@string/undoButton"/>
+
+                <Switch
+                    android:id="@+id/aiSwitchBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="switchOnOff"
+                    android:text="@string/aiSwitchBox"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/forwardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="aiMoveForward"
+                    android:text="@string/forwardButton" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

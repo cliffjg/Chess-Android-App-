@@ -1,0 +1,19 @@
+<resources>
+<!--    <string name="app_name">Android77</string>-->
+    <string name="app_name">Chess</string>
+    <string name="drawButton">Draw</string>
+    <string name="resignButton">Resign</string>
+    <string name="playerTurn">Player Turn</string>
+    <string name="selectedPieceLabel">Selected Piece:</string>
+    <string name="selectedPieceTextView">No Piece Selected</string>
+    <string name="saveButton">Save</string>
+    <string name="homeButton">Home</string>
+    <string name="undoButton">Undo</string>
+    <string name="drawDialogBox">Draw!\nGame Over!</string>
+    <string name="saveGame">Save Game</string>
+    <string name="aiSwitchBox">AI</string>
+    <string name="forwardButton">Forward</string>
+
+
+
+</resources>

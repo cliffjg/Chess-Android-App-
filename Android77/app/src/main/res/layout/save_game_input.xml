@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameInputTextField"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Name/Date:">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/gameNameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Game Name"/>
+
+        <EditText
+            android:id="@+id/dateTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/cancelFileToSystem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/saveFileToSystem"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/saveFileToSystem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
